@@ -1,8 +1,8 @@
-FROM alpine:3.10
+FROM alpine:3.11
 
 # mirrors in france
-RUN echo "http://dl-cdn.alpinelinux.org/alpine/v3.10/main" > /etc/apk/repositories && \
-    echo "http://dl-cdn.alpinelinux.org/alpine/v3.10/community" >> /etc/apk/repositories
+RUN echo "http://dl-cdn.alpinelinux.org/alpine/v3.11/main" > /etc/apk/repositories && \
+    echo "http://dl-cdn.alpinelinux.org/alpine/v3.11/community" >> /etc/apk/repositories
 
 RUN apk upgrade --no-cache --quiet --available
 
@@ -28,6 +28,7 @@ RUN apk add --no-cache \
     php7-session \
     php7-simplexml \
     php7-sockets \
+    php7-sodium \
     php7-tokenizer \
     php7-xml \
     php7-xmlwriter \

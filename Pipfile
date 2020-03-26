@@ -8,9 +8,9 @@ verify_ssl = true
 [packages]
 docker-compose = ">=1.23.0"
 docker = "*"
-Fabric = ">=1.13.1,<2.0"
+fab-classic = "*"
 # https://github.com/docker/compose/issues/6839
 colorama = {version = ">=0.4, <1", markers = "sys_platform == 'win32'"}
 
 [requires]
-python_version = "2.7"
+python_version = "3.7"
